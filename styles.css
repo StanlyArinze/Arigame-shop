@@ -1,0 +1,95 @@
+
+    :root{
+      --primary:#6B2BD9;   /* roxo principal */
+      --primary-700:#5822b1;
+      --primary-900:#3c147a;
+      --accent:#FFD84D;    /* amarelo destaque */
+      --accent-700:#f2c52b;
+      --bg:#1b171d;        /* fundo escuro elegante */
+      --surface:#141417;   /* cartões */
+      --text:#f5f7fb;      /* texto claro */
+      --muted:#cfd3e0;
+      --stroke:#262632;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1200px,92%);margin-inline:auto}
+
+    /* Header */
+    .topbar{background:linear-gradient(90deg,var(--primary-900),var(--primary));color:#fff}
+    .topbar .container{display:flex;gap:.75rem;align-items:center;justify-content:center;padding:.5rem 0;font-size:.875rem}
+    .header{position:sticky;top:0;z-index:50;background:rgba(11,11,13,.8);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--stroke)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.5px}
+    .brand__logo{width:34px;height:34px;border-radius:9px;background:conic-gradient(from 210deg at 50% 50%,var(--accent),var(--primary),var(--accent));box-shadow:0 0 0 3px #ffffff14}
+    .menu{display:flex;gap:1.25rem;font-weight:600}
+    .menu a{opacity:.9}
+    .menu a:hover{opacity:1}
+    .actions{display:flex;align-items:center;gap:.75rem}
+    .icon-btn{border:1px solid var(--stroke);background:transparent;color:var(--text);border-radius:12px;padding:.55rem .75rem;line-height:1;display:inline-flex;align-items:center;gap:.5rem}
+    .icon-btn:hover{border-color:#ffffff30}
+
+    /* Hero */
+    .hero{position:relative;overflow:hidden}
+    .hero__inner{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;padding:clamp(2rem,6vw,5rem) 0}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(1000px 500px at 20% 20%,#8f56ff22,transparent 60%),radial-gradient(900px 600px at 80% 10%,#ffd84d22,transparent 55%),linear-gradient(180deg,#111015,#0b0b0d);z-index:-1}
+    .eyebrow{color:var(--accent);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+    .hero h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.05;margin:.35rem 0 1rem}
+    .hero p{color:var(--muted);max-width:58ch}
+    .cta{display:flex;gap:.8rem;margin-top:1.25rem}
+    .btn{border:none;border-radius:14px;padding:.9rem 1.1rem;font-weight:700;cursor:pointer}
+    .btn--primary{background:var(--accent);color:#1b1400}
+    .btn--primary:hover{background:var(--accent-700)}
+    .btn--ghost{background:transparent;color:var(--text);border:1px solid var(--stroke)}
+    .btn--ghost:hover{border-color:#ffffff35}
+    .hero__art{position:relative}
+    .hero__art img{object-fit:cover;border-radius:22px;box-shadow:0 10px 50px #cc00ff55}
+    .hero__badge{position:absolute;bottom:1rem;left:1rem;background:var(--primary-900);border:1px solid #ffffff18;color:#fff;padding:.6rem .8rem;border-radius:12px;font-size:.85rem;box-shadow:0 10px 30px #00000055}
+    .mock-card{aspect-ratio:4/5;border-radius:22px;overflow:hidden;border:1px solid #ffffff14;background:linear-gradient(180deg,#2b2350,#1b1830);display:grid;place-items:end}
+    .mock-img{height:85%;width:100%;background:url('https://placehold.co/800x1000/png?text=Campanha+Roxo+%2B+Amarelo') center/cover no-repeat}
+
+    /* Section titles */
+    .section{padding:clamp(1.5rem,4vw,2.5rem) 0}
+    .section__head{display:flex;align-items:end;justify-content:space-between;margin-bottom:1rem}
+    .section__title{font-size:1.75rem}
+    .tabs{display:flex;gap:.75rem;flex-wrap:wrap}
+    .tab{border:1px solid var(--stroke);padding:.45rem .8rem;border-radius:999px;font-size:.9rem;color:var(--muted)}
+    .tab.is-active{background:var(--primary);border-color:transparent;color:#fff}
+
+    /* Product grid */
+    .grid{display:grid;gap:1rem}
+    .grid--products{grid-template-columns:repeat(4,1fr)}
+    @media (max-width:1100px){.grid--products{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:780px){.hero__inner{grid-template-columns:1fr}.grid--products{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:460px){.grid--products{grid-template-columns:1fr}}
+
+    .card{background:var(--surface);border:1px solid var(--stroke);border-radius:18px;overflow:hidden;transition:transform .2s ease, box-shadow .2s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 8px 30px #00000050}
+    .card__media{aspect-ratio:1;border-bottom:1px solid var(--stroke);background:#1a1a22}
+    .card__media img{width:100%;height:100%;object-fit:cover}
+    .card__body{padding:.9rem}
+    .price{display:flex;align-items:center;gap:.5rem;margin-top:.35rem}
+    .price__value{font-weight:800}
+    .rating{color:#ffd84d;letter-spacing:.05em}
+    .label{display:inline-flex;align-items:center;gap:.4rem;background:#ffffff06;border:1px solid var(--stroke);padding:.2rem .55rem;border-radius:999px;font-size:.75rem;color:var(--muted)}
+
+    /* Promotions */
+    .promos{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem}
+    .promo{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--stroke);min-height:180px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-900) 100%)}
+    .promo--light{background:linear-gradient(135deg,#2a2740,#1c1a2b)}
+    .promo--accent{background:linear-gradient(135deg,var(--accent),#d1aa10)}
+    .promo__content{position:absolute;inset:0;display:grid;align-content:center;gap:.35rem;padding:1.2rem;color:#fff}
+    .promo__title{font-size:1.3rem;font-weight:800}
+    .promo__cta{margin-top:.4rem}
+
+    /* Newsletter & Footer */
+    .newsletter{margin-top:2rem;border:1px solid var(--stroke);border-radius:22px;padding:1.2rem;background:linear-gradient(180deg,#14131a,#111015)}
+    .newsletter form{display:flex;gap:.6rem;flex-wrap:wrap}
+    .input{flex:1 1 260px;padding:.85rem 1rem;border-radius:12px;border:1px solid var(--stroke);background:#0e0e13;color:var(--text)}
+    .footer{padding:2.5rem 0;color:var(--muted)}
+    .footer__grid{display:grid;gap:1rem;grid-template-columns:1.2fr 1fr 1fr 1fr}
+    .footer a{color:var(--muted)}
+    @media (max-width:860px){.promos{grid-template-columns:1fr 1fr}.footer__grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:560px){.promos{grid-template-columns:1fr}.footer__grid{grid-template-columns:1fr}}
