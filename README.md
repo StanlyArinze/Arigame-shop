@@ -1,4 +1,5 @@
-# 🛍️ Mixtas Store
+
+# 🛍️ Arigame Store
 
 Bem-vindo ao repositório da **Arigame Store**, uma loja online de roupas modernas desenvolvida em **HTML e CSS**, com foco em design minimalista e responsivo.  
 O projeto foi inspirado em uma interface clean e atual, transmitindo modernidade e estilo.
