@@ -51,14 +51,14 @@ O projeto foi inspirado em uma interface clean e atual, transmitindo modernidade
 ## 🖥️ Como Visualizar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/mixtas-store.git
+   git clone https://github.com/seu-usuario/Arigame-store.git
    ```
 2. Abra o arquivo **index.html** no navegador.
 
 ---
 
 ## 👨‍💻 Autor
-Projeto desenvolvido por **Helen Ramão** ✨  
+Projeto desenvolvido por **Stanly Dim** ✨  
 🔗 [LinkedIn](www.linkedin.com/in/stanly-dim)
 
 ---
