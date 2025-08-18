@@ -59,7 +59,7 @@ O projeto foi inspirado em uma interface clean e atual, transmitindo modernidade
 
 ## 👨‍💻 Autor
 Projeto desenvolvido por **Stanly Dim** ✨  
-🔗 [LinkedIn](www.linkedin.com/in/stanly-dim)
+🔗 [LinkedIn](https://www.linkedin.com/in/stanly-dim/)
 
 ---
 
