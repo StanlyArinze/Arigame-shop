@@ -51,7 +51,7 @@ O projeto foi inspirado em uma interface clean e atual, transmitindo modernidade
 ## 🖥️ Como Visualizar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/StanlyArinze/Arigame-store.git
+   git clone https://github.com/StanlyArinze/Arigame-shop.git
    ```
 2. Abra o arquivo **index.html** no navegador.
 
